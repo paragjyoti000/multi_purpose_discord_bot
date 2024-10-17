@@ -49,6 +49,8 @@ To get a copy of this bot up and running on your server, follow these simple ste
     npm run start
     ```
 
+    or
+
     ```bash
     npm run dev
     ```
