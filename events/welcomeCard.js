@@ -1,9 +1,10 @@
 const { Events, AttachmentBuilder } = require("discord.js");
 const { createCanvas, loadImage } = require("canvas");
 const JSONdata = require("../data.json");
-const { earlyMemberRoleId } = require("../config.js");
+const { earlyMemberRoleId, welcomeCardUrl, logoUrl } = require("../config.js");
 
 const fs = require("fs");
+const config = require("../config.js");
 
 // Function to generate custom welcome card
 async function generateWelcomeCard(member) {
@@ -13,9 +14,7 @@ async function generateWelcomeCard(member) {
 
     try {
         // Load background image
-        const background = await loadImage(
-            "https://backend.otakuscrolls.com/public/assets/welcome-background.png"
-        );
+        const background = await loadImage(welcomeCardUrl);
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
         // Draw user's avatar in the middle
@@ -27,9 +26,7 @@ async function generateWelcomeCard(member) {
             })
         );
 
-        const logo = await loadImage(
-            "https://backend.otakuscrolls.com/public/assets/otakuscrolls_discord.png"
-        );
+        const logo = await loadImage(logoUrl);
 
         // Define text and image sizes
         const avatarSize = 80;
