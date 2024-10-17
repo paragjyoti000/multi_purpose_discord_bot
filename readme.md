@@ -53,6 +53,12 @@ To get a copy of this bot up and running on your server, follow these simple ste
     npm run dev
     ```
 
+5. Deploy commands:
+
+    ```bash
+    npm run reg
+    ```
+
 ## 🤝 Contributing
 
 Feel free to fork this repository and submit pull requests. I'm open to suggestions and improvements!
