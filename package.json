@@ -1,0 +1,21 @@
+{
+    "name": "discord_bot",
+    "version": "1.0.0",
+    "description": "A discord Bot",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node index.js",
+        "reg": "node deploy-commands.js"
+    },
+    "author": "ParagjS",
+    "license": "ISC",
+    "dependencies": {
+        "canvas": "^2.11.2",
+        "discord.js": "^14.15.2",
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "eslint": "^9.10.0"
+    }
+}
